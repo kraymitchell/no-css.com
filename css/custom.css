@@ -1,0 +1,8 @@
+.inner {padding: 0;}
+.site-wrapper { box-shadow: 0 0 100px rgba(54, 54, 54, 0.5) inset; background: url("../img/background.jpg") no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; }
+.masthead-brand { color: #b80000; text-transform: uppercase; }
+.container {width: 70%;padding-left: 0;padding-right: 0;}
+.masthead, .mastfoot, .cover-container { width: 70%; }
+.glyphicon { top: 3px; }
+footer a { color: #aaa; }
+.bg {background: #000;}

@@ -36,7 +36,7 @@
     
     <section class="container-fluid no-padding">
       <!-- website rendered here without CSS" -->
-      <iframe src="/ugly.php?url=<?php echo $_GET['url'];?>" style="background:#fff;"></iframe>
+      <iframe src="ugly.php?url=<?php echo $_GET['url'];?>" style="background:#fff;"></iframe>
       
     </section>
 

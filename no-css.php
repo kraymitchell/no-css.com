@@ -29,14 +29,14 @@
           <a href="/"><h3 class="masthead-brand"><span class="glyphicon glyphicon-ban-circle"></span> No CSS</h3></a>
         </div>
         <ul class="nav masthead-nav">
-          <li><a href="index.html">Show Me Another</a></li>
+          <li><a href="#">Show Me Another</a></li>
         </ul>
       </div>
     </nav>
     
     <section class="container-fluid no-padding">
       <!-- website rendered here without CSS" -->
-      <iframe src="#" style="background:#fff;"></iframe>
+      <iframe src="/ugly.php?url=<?php echo $_GET['url'];?>" style="background:#fff;"></iframe>
       
     </section>
 

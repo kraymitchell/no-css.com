@@ -23,50 +23,28 @@
 </head>
 
 <body>
-
-  <div class="site-wrapper">
-
-    <div class="site-wrapper-inner">
-
-      <div class="cover-container">
-
-        <header class="masthead clearfix">
-          <div class="inner">
-            <a href="/"><h3 class="masthead-brand"><span class="glyphicon glyphicon-ban-circle"></span> No CSS</h3></a>
-          </div>
-        </header>
-
-        <div class="inner cover">
-          <h1 class="cover-heading">The Web Without The Facelift.</h1>
-          <p class="lead">The internet is a very ugly place without CSS. Or is it?</p>
-          <p class="lead">There is a beautiful simplicity in good&nbsp;structure.</p>
-          <p class="lead">Enter a URL below to see how a website looks without the style.</p>
-          <p class="lead">
-            <form class="form-inline" role="form" method="get" action="no-css.html">
-              <div class="form-group">
-                <div class="input-group">
-                  <div class="input-group-addon">http://</div>
-                  <input class="form-control" type="text" placeholder="yourdomain.com" name="url">
-                </div>
-              </div>
-              <div class="form-group">
-               <button type="submit" class="btn btn-success btn-block">Show Me The Ugly</button>
-              </div>
-            </form>
-          </p>
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <a href="/"><h3 class="masthead-brand"><span class="glyphicon glyphicon-ban-circle"></span> No CSS</h3></a>
         </div>
-
-        <footer class="mastfoot">
-          <div class="inner">
-            <p>Concept by <a href="https://twitter.com/kraymitchell" target="_blank">@kraymitchell</a>, functionality by <a target="_blank" href="https://twitter.com/strixy">@strixy</a> | <a href="http://stopthewww.com" title="StopTheWWW | stopthewww.com" target="_blank"><img src="https://5d1064ed394200f2b4ca-c2f4cf06dda00a28fcd958e37a0d65c8.ssl.cf1.rackcdn.com/120x25-stopthewww-red.png" border="0" width="120" height="25" alt="StopTheWWW Red" border="0"/></a></p>
-          </div>
-        </footer>
-
+        <ul class="nav masthead-nav">
+          <li><a href="#">Show Me Another</a></li>
+        </ul>
       </div>
+    </nav>
+    
+    <section class="container-fluid no-padding">
+      <!-- website rendered here without CSS" -->
+      <iframe src="/ugly.php?url=<?php echo $_GET['url'];?>" style="background:#fff;"></iframe>
+      
+    </section>
 
-    </div>
-
-  </div>
+    <footer class="mastfoot navbar-fixed-bottom container">
+        <div class="inner">
+          <p>Concept by <a href="https://twitter.com/kraymitchell" target="_blank">@kraymitchell</a>, functionality by <a target="_blank" href="https://twitter.com/strixy">@strixy</a> | <a href="http://stopthewww.com" title="StopTheWWW | stopthewww.com" target="_blank"><img src="https://5d1064ed394200f2b4ca-c2f4cf06dda00a28fcd958e37a0d65c8.ssl.cf1.rackcdn.com/120x25-stopthewww-red.png" border="0" width="120" height="25" alt="StopTheWWW Red" border="0"/></a></p>
+        </div>
+    </footer>
 
   <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>

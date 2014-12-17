@@ -34,17 +34,11 @@
       </div>
     </nav>
     
-    <section class="container-fluid no-padding">
+    <section class="container-fluid no-padding scroll">
       <!-- website rendered here without CSS" -->
       <iframe src="ugly.php?url=<?php echo $_GET['url'];?>" style="background:#fff;"></iframe>
       
     </section>
-
-    <footer class="mastfoot navbar-fixed-bottom container">
-        <div class="inner">
-          <p>Concept by <a href="https://twitter.com/kraymitchell" target="_blank">@kraymitchell</a>, functionality by <a target="_blank" href="https://twitter.com/strixy">@strixy</a> | <a href="http://stopthewww.com" title="StopTheWWW | stopthewww.com" target="_blank"><img src="https://5d1064ed394200f2b4ca-c2f4cf06dda00a28fcd958e37a0d65c8.ssl.cf1.rackcdn.com/120x25-stopthewww-red.png" border="0" width="120" height="25" alt="StopTheWWW Red" border="0"/></a></p>
-        </div>
-    </footer>
 
   <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>

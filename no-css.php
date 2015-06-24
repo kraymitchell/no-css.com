@@ -36,13 +36,12 @@
     
     <section class="container-fluid no-padding scroll">
       <!-- website rendered here without CSS" -->
-      <iframe src="ugly.php?url=<?php echo $_GET['url'];?>" style="background:#fff;"></iframe>
+      <iframe id="nocss" src="ugly.php?url=<?php echo $_GET['url'];?>" style="background:#fff;width:100%;height:100%;padding-top: 50px;"></iframe>
       
     </section>
 
   <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
-  <script src="js/docs.min.js"></script>
   <script src="js/ie10-viewport-bug-workaround.js"></script>
   <script type="text/javascript">
   var clicky_site_ids = clicky_site_ids || [];

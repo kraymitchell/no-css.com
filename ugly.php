@@ -10,14 +10,7 @@ if($_GET['url'])
 	}
 
 	$url = explode($resource,$_GET['url']);
-	if(count($url)>1)
-	{
-		$page = file_get_contents($resource.$url[count($url)-1]);
-	}
-	else
-	{
-		$page = file_get_contents($resource.$url[0]);
-	}
+	$page = file_get_contents($resource.$url[count($url)-1]);
 	$search = array ("'<script[^>]*?>.*?</script>'si","'<style[^>]*?>.*?</style>'si","'<link[^>]*?>'si","'<object[^>]*?>.*?</object>'si");
 	$replace = array ("","","","","");
 	$site = preg_replace ($search, $replace, $page);

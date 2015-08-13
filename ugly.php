@@ -12,7 +12,7 @@ if($_GET['url'])
 	$url = explode($resource,$_GET['url']);
 	if(count($url)>1)
 	{
-		$page = file_get_contents($resource.$url[1]);
+		$page = file_get_contents($resource.$url[count($url)-1]);
 	}
 	else
 	{

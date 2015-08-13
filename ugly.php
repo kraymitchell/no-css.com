@@ -9,7 +9,7 @@ if($_GET['url'])
 		$resource = "https://";
 	}
 
-	$url = str_replace(["https://","http://"],'',$_GET['url']);
+	$url = str_ireplace(["https://","http://"],'',$_GET['url']);
 	$page = file_get_contents($resource.$url);
 	if((!stristr($page,"<head>") || !stristr($page,"<body")) && $resource == "https://")
 	{

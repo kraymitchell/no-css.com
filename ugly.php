@@ -9,17 +9,8 @@ if($_GET['url'])
 		$resource = "https://";
 	}
 
-	$url = str_ireplace(["https://","http://"],'',$_GET['url']);
-	$page = file_get_contents($resource.$url);
-/*	if((!stristr($page,"<head>") || !stristr($page,"<body")) && $resource == "https://")
-	{
-		$page = file_get_contents("http://".$url);
-	}
-	if((!stristr($page,"<head>") || !stristr($page,"<body")) && $resource == "http://")
-	{
-		die('<span style="">Did you ask me to check a website or a bananna?</span>');
-	}
-*/
+	$url = explode($resource,$_GET['url']);
+	$page = file_get_contents($resource.$url[1]);
 	$search = array ("'<script[^>]*?>.*?</script>'si","'<style[^>]*?>.*?</style>'si","'<link[^>]*?>'si","'<object[^>]*?>.*?</object>'si");
 	$replace = array ("","","","","");
 	$site = preg_replace ($search, $replace, $page);
